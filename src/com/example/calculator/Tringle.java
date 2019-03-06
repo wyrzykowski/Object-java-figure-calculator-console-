@@ -9,7 +9,7 @@ public class Tringle extends Figure implements Print{
         if (a < 0 || b < 0 || c< 0) {
             throw new IllegalArgumentException("Side a,b and c must be >= 0");
         }
-        if (a + b < c || a + c < b || b + c < a ) {
+        if (a + b <= c || a + c <= b || b + c <= a ) {
             throw new IllegalArgumentException("Cannot build Tringle with given sides.");
         }
     }
